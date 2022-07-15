@@ -1,35 +1,94 @@
 <!-- Top Down View -->
 <svg version="1.1" baseProfile="full" width="600" height="700" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
-    <!-- Walls -->
-    <rect x="10" y="10" width="40" height="60" style="fill:grey;stroke-width:0.25;stroke:black;fill-opacity:0.5"></rect>
-    <!-- Concrete -->
-    <rect x="50" y="10" width="20" height="60" style="fill:grey;stroke-width:0.125;stroke:black;fill-opacity:0.125"></rect>
-    <!-- Doors -->
-    <rect x="49.7" y="14" width="0.6" height="3" style="fill:grey;stroke-width:0.25;stroke:black;fill-opacity:0.25"></rect>
-    <rect x="49.7" y="26" width="0.6" height="18" style="fill:grey;stroke-width:0.25;stroke:black;fill-opacity:0.25"></rect>
-    <rect x="49.7" y="48" width="0.6" height="18" style="fill:grey;stroke-width:0.25;stroke:black;fill-opacity:0.25"></rect>
-    <!-- Dimensions -->
-    <text x="31" y="9" font-size="3px" text-anchor="middle" dominant-baseline="auto">40'</text>
-    <text x="9" y="40" font-size="3px" text-anchor="end" dominant-baseline="middle">60'</text>
-    <text x="60" y="9" font-size="3px" text-anchor="middle" dominant-baseline="auto">20'</text>
-    <!-- Descriptions -->
-    <text x="31" y="40" font-size="3px" text-anchor="middle" dominant-baseline="middle">Pole Barn</text>
-    <text x="62" y="40" font-size="3px" text-anchor="middle" dominant-baseline="middle">Concrete</text>
-    <text x="41" y="0" font-size="3px" text-anchor="middle" dominant-baseline="hanging">North</text>
-    <text y="52" x="-15.5" font-size="2px" text-anchor="middle" transform="rotate(-90) translate(0,0)">Door</text>
-    <text y="52" x="-35" font-size="2px" text-anchor="middle" transform="rotate(-90) translate(0,0)">Double Garage Door</text>
-    <text y="54" x="-35" font-size="2px" text-anchor="middle" transform="rotate(-90) translate(0,0)">18' * 12'</text>
-    <text y="52" x="-57" font-size="2px" text-anchor="middle" transform="rotate(-90) translate(0,0)">Double Garage Door</text>
-    <text y="54" x="-57" font-size="2px" text-anchor="middle" transform="rotate(-90) translate(0,0)">18' * 12'</text>
+    <style>
+        .concrete {
+            fill:grey;
+            stroke-width:0.125;
+            stroke:black;
+            fill-opacity:0.125
+        }
+        .dimensions {
+            font-size:3px
+        }
+        .descriptionsDoors {
+            font-size:2px;
+            text-anchor:middle;
+            transform:translate(0, 0) rotate(-90deg) ;;
+        }
+        .descriptionsMain {
+            font-size:3px;
+            text-anchor:middle;
+        }
+        .doors {
+            fill:grey;
+            stroke-width:0.25;
+            stroke:black;
+            fill-opacity:0.25
+        }
+        .walls {
+            fill:grey;
+            stroke-width:0.25;
+            stroke:black;
+            fill-opacity:0.5
+        }
+    </style>
+    <g class="walls">
+        <rect x="10" y="10" width="40" height="60"></rect>
+    </g>
+    <g class="concrete">
+        <rect x="50" y="10" width="20" height="60"></rect>
+    </g>
+    <g class="doors">
+        <rect x="49.7" y="14" width="0.6" height="3"></rect>
+        <rect x="49.7" y="26" width="0.6" height="18"></rect>
+        <rect x="49.7" y="48" width="0.6" height="18"></rect>
+    </g>
+    <g class="dimensions">
+        <text x="31" y="9" text-anchor="middle" dominant-baseline="auto">40'</text>
+        <text x="9" y="40" text-anchor="end" dominant-baseline="middle">60'</text>
+        <text x="60" y="9" text-anchor="middle" dominant-baseline="auto">20'</text>
+    </g>
+    <g class="descriptionsMain">
+        <text x="31" y="40" dominant-baseline="middle">Pole Barn</text>
+        <text x="62" y="40" dominant-baseline="middle">Concrete</text>
+        <text x="41" y="0" dominant-baseline="hanging">North</text>
+    </g>
+    <g class="descriptionsDoors">
+        <text y="52" x="-15.5">Door</text>
+        <text y="52" x="-35">Double Garage Door</text>
+        <text y="54" x="-35">18' * 12'</text>
+        <text y="52" x="-57">Double Garage Door</text>
+        <text y="54" x="-57">18' * 12'</text>
+    </g>
 </svg>
 
 <!-- East Side View -->
 <svg version="1.1" baseProfile="full" width="600" height="700" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
-    <!-- Roof -->
-    <path d="M 25 10 h 14 v 60 h -14 Z" stroke="black" fill="grey" stroke-width="0.25" fill-opacity="0.25"/>
-    <path d="M 25 10 l -7.5 30 l 7.5 30" stroke="black" fill="grey" stroke-width="0.25" fill-opacity="0.25"/>
-    <!-- Doors -->
-    <rect x="31" y="14" width="8" height="3" style="fill:grey;stroke-width:0.25;stroke:black;fill-opacity:0.25"></rect>
-    <rect x="27" y="26" width="12" height="18" style="fill:grey;stroke-width:0.25;stroke:black;fill-opacity:0.25"></rect>
-    <rect x="27" y="48" width="12" height="18" style="fill:grey;stroke-width:0.25;stroke:black;fill-opacity:0.25"></rect>
+    <style>
+        .doors {
+            fill:grey;
+            stroke-width:0.25;
+            stroke:black;
+            fill-opacity:0.25
+        }
+        .roof {
+            fill:grey;
+            stroke-width:0.25;
+            stroke:black;
+            fill-opacity:0.25
+        }
+        .wall {
+            fill:grey;
+            stroke-width:0.25;
+            stroke:black;
+            fill-opacity:0.25
+        }
+    </style>
+    <g class="doors">
+        <rect x="31" y="14" width="8" height="3"></rect>
+        <rect x="27" y="26" width="12" height="18"></rect>
+        <rect x="27" y="48" width="12" height="18"></rect>
+    </g>
+    <path class="roof" d="M 25 10 l -7.5 30 l 7.5 30"/>
+    <rect class="wall" x="25" y="10" width="14" height="60"></rect>
 </svg>
