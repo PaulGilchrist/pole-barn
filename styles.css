@@ -1,0 +1,42 @@
+.concrete {
+    fill: grey;
+    stroke-width: 0.125;
+    stroke: black;
+    fill-opacity: 0.125
+}
+
+.dimensions {
+    font-size: 3px
+}
+
+.descriptionsDoors {
+    font-size: 2px;
+    text-anchor: middle;
+    transform: translate(0, 0) rotate(-90deg);
+}
+
+.descriptionsMain {
+    font-size: 3px;
+    text-anchor: middle;
+}
+
+.doors {
+    fill: grey;
+    stroke-width: 0.25;
+    stroke: black;
+    fill-opacity: 0.5
+}
+
+.roof {
+    fill:grey;
+    stroke-width:0.25;
+    stroke:black;
+    fill-opacity:0.5
+}
+
+.walls {
+    fill: grey;
+    stroke-width: 0.25;
+    stroke: black;
+    fill-opacity: 0.5
+}

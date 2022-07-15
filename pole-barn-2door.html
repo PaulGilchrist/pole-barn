@@ -1,37 +1,6 @@
+<link rel="stylesheet" href="styles.css">
 <!-- Top Down View -->
 <svg version="1.1" baseProfile="full" width="600" height="700" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
-    <style>
-        .concrete {
-            fill:grey;
-            stroke-width:0.125;
-            stroke:black;
-            fill-opacity:0.125
-        }
-        .dimensions {
-            font-size:3px
-        }
-        .descriptionsDoors {
-            font-size:2px;
-            text-anchor:middle;
-            transform:translate(0, 0) rotate(-90deg) ;;
-        }
-        .descriptionsMain {
-            font-size:3px;
-            text-anchor:middle;
-        }
-        .doors {
-            fill:grey;
-            stroke-width:0.25;
-            stroke:black;
-            fill-opacity:0.25
-        }
-        .walls {
-            fill:grey;
-            stroke-width:0.25;
-            stroke:black;
-            fill-opacity:0.5
-        }
-    </style>
     <g class="walls">
         <rect x="10" y="10" width="40" height="60"></rect>
     </g>
@@ -64,31 +33,11 @@
 
 <!-- East Side View -->
 <svg version="1.1" baseProfile="full" width="600" height="700" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
-    <style>
-        .doors {
-            fill:grey;
-            stroke-width:0.25;
-            stroke:black;
-            fill-opacity:0.25
-        }
-        .roof {
-            fill:grey;
-            stroke-width:0.25;
-            stroke:black;
-            fill-opacity:0.25
-        }
-        .wall {
-            fill:grey;
-            stroke-width:0.25;
-            stroke:black;
-            fill-opacity:0.25
-        }
-    </style>
     <g class="doors">
         <rect x="31" y="14" width="8" height="3"></rect>
         <rect x="27" y="26" width="12" height="18"></rect>
         <rect x="27" y="48" width="12" height="18"></rect>
     </g>
     <path class="roof" d="M 25 10 l -7.5 30 l 7.5 30"/>
-    <rect class="wall" x="25" y="10" width="14" height="60"></rect>
+    <rect class="walls" x="25" y="10" width="14" height="60"></rect>
 </svg>
